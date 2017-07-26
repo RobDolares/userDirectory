@@ -16,7 +16,7 @@ margin: 0 10%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex: 1 0 16%;
+  flex: 1 0 21%;
   margin:5px;
   padding: 10px;
   border: 2px solid rgba(0,0,0,0.2);
@@ -35,7 +35,6 @@ p {
   margin:0;
   padding:0;
 }
-
 
 /* Bio specific styling */
 
@@ -110,6 +109,10 @@ p {
 #subHeadInfo{
   margin-left: 40px;
   flex:3 0 20%
+}
+
+#subHeadInfo p {
+  font-size: 1em;
 }
 
 ul {

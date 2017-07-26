@@ -15,6 +15,16 @@ app.get('/home', function(req, res) {
   res.render('home', data)
 })
 
+//Need to replace "null" value for string
+
+for (let i = 0; i < data.users.length; i++){
+  if(data.users[i].job === null){
+    data.users[i].job = "Available for hire";
+  }
+};
+
+//Creating paths for each individual user's bio
+
 app.get('/bio/:user', function(req, res) {
   let userName = req.params.user;
   for (let i = 0; i < data.users.length; i++) {
@@ -23,6 +33,8 @@ app.get('/bio/:user', function(req, res) {
     }
   }
 });
+
+
 
 app.listen(3000, function() {
   console.log('Successfully started express application!');
