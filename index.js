@@ -23,7 +23,6 @@ app.get('/bio/:user', function(req, res) {
     }
   }
 });
-console.log(data)
 
 app.listen(3000, function() {
   console.log('Successfully started express application!');

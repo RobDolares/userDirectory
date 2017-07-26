@@ -40,22 +40,93 @@ p {
 /* Bio specific styling */
 
 .bioContainer {
-  margin: 0 20%;
+  padding:15px;
+  margin: 12% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(0,0,0,0.3)
+}
+
+.row1{
   display: flex;
   flex-flow: wrap;
 }
 
 #bioAvaContainer {
+  text-align: right;
   border-radius: 90px;
-  border: 1px solid rgba(0,0,0,0.2);
+  flex: 2 0 20%;
 }
 
 #bioAvatar {
   border-radius: 90px;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 4px;
 }
-
 
 #bioName {
   font-size: 3em;
-  color: black;
+  font-weight: 400;
+  margin: 0px;
+  color: rgba(0,0,0,0.8);
+}
+
+#bioContact {
+  display: flex;
+  flex-flow: column;
+  margin-left: 40px;
+  flex: 3 0 20%;
+}
+
+#address {
+  margin-top: 10px;
+}
+
+#address p{
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+.row2{
+  margin-top: 20px;
+  display: flex;
+}
+
+#subHeaders{
+  margin: 0;
+  text-align: right;
+  flex: 2 0 20%;
+}
+
+#education {
+  margin: 0 0 .8em 0;
+}
+
+#skills {
+  margin-top:0;
+}
+
+#subHeadInfo{
+  margin-left: 40px;
+  flex:3 0 20%
+}
+
+ul {
+  padding:0;
+  list-style-type: none;
+}
+
+.backHome {
+  white-space: nowrap;
+  margin: 30px auto 10px auto;
+  border-radius: 5px;
+  padding:10px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.backHome a {
+  text-decoration: none;
+  color: white;
 }
